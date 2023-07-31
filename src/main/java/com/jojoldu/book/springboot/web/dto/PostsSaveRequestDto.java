@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+
 @Getter
 @NoArgsConstructor
 public class PostsSaveRequestDto {
@@ -23,7 +25,6 @@ public class PostsSaveRequestDto {
         return Posts.builder()
                 .title(title)
                 .content(content)
-                .author(author)
                 .build();
     }
 }
